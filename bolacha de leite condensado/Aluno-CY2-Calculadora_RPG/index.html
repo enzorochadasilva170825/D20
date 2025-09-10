@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Mágica de RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora Mágica de Atributos</h1>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th class="thHabilidades">Habilidade</th>
+                    <th class="thValores">Valor (D20)</th>
+                    <th class="thModificadores">Modificador</th>
+                    <th class="thTotal">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>FOR</strong>
+                        <p class="descricao-habilidade">(Força)</p>
+                    </td>
+                    <td><input type="text" id="for-d20" class="campoTabela" readonly></td>
+                    <td><input type="text" id="for-mod" class="campoTabela" readonly></td>
+                    <td><input type="text" id="for-total" class="campoTabela" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>DES</strong>
+                        <p class="descricao-habilidade">(Destreza)</p>
+                    </td>
+                    <td><input type="text" id="des-d20" class="campoTabela" readonly></td>
+                    <td><input type="text" id="des-mod" class="campoTabela" readonly></td>
+                    <td><input type="text" id="des-total" class="campoTabela" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>CON</strong>
+                        <p class="descricao-habilidade">(Constituição)</p>
+                    </td>
+                    <td><input type="text" id="con-d20" class="campoTabela" readonly></td>
+                    <td><input type="text" id="con-mod" class="campoTabela" readonly></td>
+                    <td><input type="text" id="con-total" class="campoTabela" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>INT</strong>
+                        <p class="descricao-habilidade">(Inteligência)</p>
+                    </td>
+                    <td><input type="text" id="int-d20" class="campoTabela" readonly></td>
+                    <td><input type="text" id="int-mod" class="campoTabela" readonly></td>
+                    <td><input type="text" id="int-total" class="campoTabela" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>SAB</strong>
+                        <p class="descricao-habilidade">(Sabedoria)</p>
+                    </td>
+                    <td><input type="text" id="sab-d20" class="campoTabela" readonly></td>
+                    <td><input type="text" id="sab-mod" class="campoTabela" readonly></td>
+                    <td><input type="text" id="sab-total" class="campoTabela" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>CAR</strong>
+                        <p class="descricao-habilidade">(Carisma)</p>
+                    </td>
+                    <td><input type="text" id="car-d20" class="campoTabela" readonly></td>
+                    <td><input type="text" id="car-mod" class="campoTabela" readonly></td>
+                    <td><input type="text" id="car-total" class="campoTabela" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="botoes">
+            <button id="btn-rolar">Girar Dados</button>
+            <button id="btn-recomecar">Recomeçar</button>
+        </div>
+    </main>
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>
